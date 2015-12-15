@@ -2,14 +2,14 @@
 自己学习的时候边学边写的基础知识
 <br>1.node.js中回调函数格式是约定俗成的，它有两个参数，第一个参数为err，第二个参数为data，顾名思义，err是错误信息，data则是返回的数据
 <br>2.os模块可提供操作系统的一些基本信息，它的一些常用方法如下：
-<br>var os = require("os");
-<br>var result = os.platform(); //查看操作系统平台
-<br>//os.release(); 查看操作系统版本
-<br>//os.type(); 查看操作系统名称
-<br>//os.arch(); 查看操作系统CPU架构
-<br>console.log(result);
+<br>    var os = require("os");
+<br>    var result = os.platform(); //查看操作系统平台
+<br>    os.release(); 查看操作系统版本
+<br>    os.type(); 查看操作系统名称
+<br>    os.arch(); 查看操作系统CPU架构
+<br>    console.log(result);
 <br>3.process是一个全局内置对象，可以在代码中的任何位置访问此对象，这个对象代表我们的node.js代码宿主的操作系统进程对象。
-使用process对象可以截获进程的异常、退出等事件，也可以获取进程的当前目录、环境变量、内存占用等信息，还可以执行进程退出、工作目录切换等操作。
+        使用process对象可以截获进程的异常、退出等事件，也可以获取进程的当前目录、环境变量、内存占用等信息，还可以执行进程退出、工作目录切换等操作。
 <br>4.查看应用程序当前目录时，可以使用cwd函数，使用语法如下：
 <br>Process.cwd();
 <br>5.改变应用程序目录，就要使用chdir函数了，它的用法如下：
