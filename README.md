@@ -81,7 +81,7 @@ Url后面的参数名也可以这样写： /shoes?order=desc&shoe[color]=blue&s
 <br>16.send()方法向浏览器发送一个响应信息，并可以智能处理不同类型的数据
 <br>18.解析 json 方式的post请求数据  需要安装 body-parser
 
-
+---------继续记录---------
 
 
 
