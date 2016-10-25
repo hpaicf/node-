@@ -7,9 +7,9 @@
 ```javascript
     var os = require("os");
     var result = os.platform(); //查看操作系统平台
-    os.release(); 查看操作系统版本
-    os.type(); 查看操作系统名称
-    os.arch(); 查看操作系统CPU架构
+    os.release(); //查看操作系统版本
+    os.type(); //查看操作系统名称
+    os.arch(); //查看操作系统CPU架构
     console.log(result);
 ```
 
@@ -79,7 +79,7 @@ parse函数的第二个参数是布尔类型，当参数为true时，会将查�
 ```
 * 和get函数不同app.all()函数可以匹配所有的HTTP动词，也就是说它可以过滤所有路径的请求，如果使用all函数定义中间件，那么就相当于所有请求都必须先通过此该中间件。app.all(path,function(request, response));
 ```javascript
-    1.app.all("*", function(request, response, next) ）  //“*“表示对所有路径都使用
+    app.all("*", function(request, response, next) ）  //“*“表示对所有路径都使用
 ```
 * use用法1是express调用中间件的方法，它返回一个函数
 ```javascript
@@ -97,7 +97,6 @@ Url后面的参数名也可以这样写： /shoes?order=desc&shoe[color]=blue&s
 * param基本用法  通过req.param我们也可以获取被解析过的请求参数对象的值。req.param("属性名)
 所谓“路由”，就是指为不同的访问路径，指定不同的处理方法。
 * 和param相似，但params是一个可以解析包含着有复杂命名路由规则的请求对象的属性。
-
 * send()方法向浏览器发送一个响应信息，并可以智能处理不同类型的数据
 * 解析 json 方式的post请求数据  需要安装 body-parser
 
