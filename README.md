@@ -48,7 +48,7 @@ fs模块中还有appendFile函数，它可以将新的内容追加到已有的�
 * 读取目录下所有的文件：fs.readdir(目录,回调函数(err,files));
 * fs模块不但提供异步的文件操作，还提供相应的同步操作方法，需要指出的是，nodejs采用异步I/O正是为了避免I/O时的等待时间，提高CPU的利用率，所以在选择使用异步或同步方法的时候需要权衡取舍。
 
-##Url:
+## Url:
 * parse函数的作用是解析url，返回一个json格式的数组
 
 parse函数的第二个参数是布尔类型，当参数为true时，会将查询条件也解析成json格式的对象。也就是query的值是一个json的
@@ -65,7 +65,7 @@ parse函数的第二个参数是布尔类型，当参数为true时，会将查�
 
 
 
-##Express
+## Express
 
 * Express是一个简洁、灵活的node.js Web应用开发框架, 它提供一系列强大的功能，比如：模板解析、静态文件服务、中间件、路由控制等等,并且还可以使用插件或整合其他模块来帮助你创建各种 Web和移动设备应用,是目前最流行的基于Node.js的Web开发框架，并且支持Ejs、jade等多种模板，可以快速地搭建一个具有完整功能的网站。
 * Express的常用方法 get方法 —— 根据请求路径来处理客户端发出的GET请求。app.get(path,function(request, response));path为请求的路径，第二个参数为处理请求的回调函数，有两个参数分别是request和response，代表请求信息和响应信息。
